@@ -1,3 +1,6 @@
+// Given an array of N distinct elements A[ ]. The task is to find the minimum number of swaps required to sort the array. 
+// You are required to complete the function which returns an integer denoting the minimum number of swaps, required to sort the array.
+
 // Approach 1: Using graphs
 // We will have n nodes and an edge directed from node i to node j if the element at i’th index must be present at j’th index in the sorted array.
 // The graph will now contain many non-intersecting cycles. Now a cycle with m nodes will only require m-1 swaps. 

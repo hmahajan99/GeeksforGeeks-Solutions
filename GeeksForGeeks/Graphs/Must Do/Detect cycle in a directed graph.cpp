@@ -1,3 +1,5 @@
+// Given a directed graph, the task is to complete the method isCyclic() to detect if there is a cycle in the graph or not.
+
 // NOTE: OUTPUT of a DFS can be described in a SPANNING TREE with tree,forward,cross,back edges.
 // Cycle in graph => Only if back edge present
 

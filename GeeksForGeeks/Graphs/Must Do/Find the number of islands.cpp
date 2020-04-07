@@ -1,3 +1,6 @@
+// A group of connected 1's forms an island. 
+// The task is to complete the method findIslands() which returns the number of islands present. 
+
 // Problem => Counting number of components in an undirected graph
 
 // Approach 1 : DFS, Time O(NM)
@@ -27,16 +30,16 @@ void dfs(int i,int j,int N,int M,vector<int> A[],vector<vector<bool>> &vis){
 
 int findIslands(vector<int> A[], int N, int M){
     vector<vector<bool>> vis(N,vector<bool>(M,false));
-    int ans=0;
+    int numComponents=0;
     for(int i=0;i<N;i++){
         for(int j=0;j<M;j++){
             if(!vis[i][j]&&A[i][j]==1){
                 dfs(i,j,N,M,A,vis);
-                ans++;
+                numComponents++;
             }
         }
     }
-    return ans;
+    return numComponents;
 }
 
 /***************************************************************************************************************************/
@@ -76,15 +79,15 @@ void bfs(int i,int j,int N,int M,vector<int> A[],vector<vector<bool>> &vis){
 
 int findIslands(vector<int> A[], int N, int M){
     vector<vector<bool>> vis(N,vector<bool>(M,false));
-    int ans=0;
+    int numComponents=0;
     for(int i=0;i<N;i++){
         for(int j=0;j<M;j++){
             if(!vis[i][j]&&A[i][j]==1){
                 bfs(i,j,N,M,A,vis);
-                ans++;
+                numComponents++;
             }
         }
     }
-    return ans;
+    return numComponents;
 }
 

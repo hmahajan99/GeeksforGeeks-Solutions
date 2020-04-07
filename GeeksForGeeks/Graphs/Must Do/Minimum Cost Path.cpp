@@ -1,6 +1,12 @@
-// Minimum Cost Path with Left, Right, Bottom and Up moves allowed
-// It is not possible to solve this problem using dynamic programming because here current state depends not only on right and bottom cells but also on left and upper cells.
+// Given a square grid of size N, each cell of which contains integer cost which represents a cost to traverse through that cell, 
+// we need to find a path from top left cell to bottom right cell by which total cost incurred is minimum.
+
+// Note : It is assumed that negative cost cycles do not exist in input matrix.
+
 // Approach: Dijkstra on 2D Grid (Using set)
+// IMP!!!=> Minimum Cost Path with Left, Right, Bottom and Up moves allowed
+
+// It is not possible to solve this problem using dynamic programming because here current state depends not only on right and bottom cells but also on left and upper cells.
 // Note : It is assumed that negative cost cycles do not exist in input matrix.
 
 using namespace std;

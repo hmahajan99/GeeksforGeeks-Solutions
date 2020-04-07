@@ -1,3 +1,5 @@
+// Given a undirected graph, the task is to complete the method isCyclic() to detect if there is a cycle in the undirected graph or not.
+
 // Approach 1 : DFS -  O(V+E)
 
 /* This function is used to detect a cycle in undirected graph

@@ -1,3 +1,10 @@
+// Given an array of strings A[], determine if the strings can be chained together to form a circle. 
+// A string X can be chained together with another string Y if the last character of X is same as first character of Y. 
+// If every string of the array can be chained, it will form a circle.
+
+// For eg for the array arr[] = {"for", "geek", "rig", "kaf"} 
+// the answer will be Yes as the given strings can be chained as "for", "rig", "geek" and "kaf"
+
 // Approach 1: Inefficient, using backtracking
 
 using namespace std;
@@ -38,7 +45,7 @@ int main(){
 
 /***************************************************************************************************************************/
 
-// Approach 2 : Eulerian circuit in directed graph
+// Approach 2 : EULERIAN CIRCUIT IN DIRECTED GRAPH 
 
 // The idea is to create a directed graph of all characters and then find if their is an eulerian circuit in the graph or not.
 // If there is an eulerian circuit, then chain can be formed, otherwise not.

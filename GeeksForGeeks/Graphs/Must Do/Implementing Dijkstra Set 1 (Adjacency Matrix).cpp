@@ -1,3 +1,6 @@
+// Given a graph of V nodes represented in the form of the adjacency matrix. 
+// The task is to find the shortest distance of all the vertex's from the source vertex.
+
 /*  Function to implement Dijkstra
 *   graph: vector of vectors which represents the graph
 *   src: source vertex to start traversing graph with

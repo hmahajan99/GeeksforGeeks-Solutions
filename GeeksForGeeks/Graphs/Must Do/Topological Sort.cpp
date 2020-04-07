@@ -1,3 +1,6 @@
+// Given a directed graph, you need to complete the function topoSort which returns an array having the topologically sorted elements of the array and takes two arguments. 
+// Note : There can be multiple topological sorts of a Graph. 
+
 // Approach 1: Using DFS - O(V+E)
 
 // The Graph structure is as folows

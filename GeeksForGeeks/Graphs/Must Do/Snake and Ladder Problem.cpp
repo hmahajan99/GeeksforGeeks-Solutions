@@ -1,4 +1,7 @@
-// Given a snake and ladder board of order 5x6, find the minimum number of dice throws required to reach the destination or last cell (30th cell) from source (1st cell) . 
+// Given a snake and ladder board of order 5x6, 
+// find the minimum number of dice throws required to reach the destination or last cell (30th cell) from source (1st cell) . 
+// The first line of input contains an integer N denoting the no of ladders and snakes present. 
+// Then in the next line are 2*N space separated values a,b which denotes a ladder or a snake at position 'a' which takes to a position 'b'.
 
 using namespace std;
 

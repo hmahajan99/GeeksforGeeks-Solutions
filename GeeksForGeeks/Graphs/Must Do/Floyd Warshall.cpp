@@ -1,3 +1,8 @@
+// The problem is to find shortest distances between every pair of vertices in a given edge weighted directed Graph. 
+// The Graph is represented as Adjancency Matrix, and the Matrix denotes the weight of the edegs (if it exists) else INF (1e7).
+
+// Approach
+
 // The Floyd Warshall Algorithm is for solving the All Pairs Shortest Path problem (Dynamic Programming, optimal substructure property)
 // Time Complexity: O(V^3)
 // We can use Dijskstra’s shortest path algorithm for finding all pair shortest paths by running it for every vertex. Time complexity (V^3).

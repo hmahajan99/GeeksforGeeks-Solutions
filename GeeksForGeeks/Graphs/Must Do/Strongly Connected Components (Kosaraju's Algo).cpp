@@ -15,7 +15,11 @@
 
 /***************************************************************************************************************************/
 
-// TO find NUMBER of SCC
+// Given a graph with N nodes and M directed edges. 
+// Your task is to complete the function kosaraju() which returns an integer denoting the number of strongly connected components in the graph.
+
+// Approach: TO find NUMBER of SCC
+
 
 // We can find all strongly connected components in O(V+E) time using Kosaraju’s algorithm. 
 // Following is detailed Kosaraju’s algorithm.
