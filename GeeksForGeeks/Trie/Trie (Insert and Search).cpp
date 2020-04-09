@@ -158,3 +158,75 @@ int main(){
 	}
 	return 0;
 }
+
+/***************************************************************************************************************************/
+
+// Approach 3: ITERATIVE METHOD of Approach 2
+// Using HASHMAP for children, don’t waste space storing null pointers
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class TrieNode{
+    public:
+    char data;
+    unordered_map<char,TrieNode*> children;
+    bool isTerminal;
+    TrieNode(char ch){
+        data=ch;
+        isTerminal=false;
+    }
+};
+
+class Trie{
+    TrieNode* root;
+
+public:
+
+    Trie(){
+        root=new TrieNode('\0');
+    }
+    
+    void insert(string word){
+        TrieNode *currNode = root;
+        for(int i=0;i<word.size();i++){
+            char ch = word[i];
+            if(!currNode->children.count(ch)){
+                currNode->children[ch] = new TrieNode(ch);
+            }
+            currNode = currNode->children[ch];
+        }
+        currNode->isTerminal = true;
+    }    
+    
+    bool search(string word){
+        TrieNode *currNode = root;
+        for(int i=0;i<word.size();i++){
+            char ch = word[i];
+            if(!currNode->children.count(ch)){
+                return false;
+            }
+            currNode = currNode->children[ch];
+        }
+        return currNode->isTerminal;
+    }
+};
+
+int main(){
+	int t;
+	cin>>t;
+	while(t--){
+	    Trie t;
+	    int n;
+	    cin>>n;
+	    while(n--){
+	        string s;
+	        cin>>s;
+	        t.insert(s);
+	    }
+	    string s;
+	    cin>>s;
+	    cout<<t.search(s)<<"\n";
+	}
+	return 0;
+}
