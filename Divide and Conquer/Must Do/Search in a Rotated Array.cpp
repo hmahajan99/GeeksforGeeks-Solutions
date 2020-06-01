@@ -7,6 +7,8 @@
 // NOTE: Assume that all elements in array are distinct
 
 // Approach: Binary Search, O(logn)
+// ALTERNATIVE: Could write RECURSIVE solution for Binary Search as well
+
 // 1) Find middle point mid = (l + h)/2
 // 2) If key is present at middle point, return mid.
 // 3) Else If arr[l..mid] is sorted
