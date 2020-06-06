@@ -24,7 +24,7 @@
 
 /***************************************************************************************************************************/
 
-// Approach 3: Binary search on smaller array, Partition both such that total elements on left side is half
+// Approach 3: Binary search on smaller array, Partition both such that total elements on left side of X & Y is k
 // Time - O(log(min(m,n)))
 // NOTE: COMMON APPROACH For BINARY SEARCH on 2 SORTED ARRAYS
 // Similar to InterviewBit-Solutions/Binary Search/Sort modification/Median of Array.cpp
