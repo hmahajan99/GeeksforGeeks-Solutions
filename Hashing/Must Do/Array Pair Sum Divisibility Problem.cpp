@@ -19,6 +19,10 @@
 //    c) If the remainder is 0, then there must be even occurrences.
 //    c) Else, number of occurrences of current the remainder must be equal to a number of occurrences of "k - current remainder".
 
+// CORNER CASE: If arr[i] can be negative, use
+// int rem = arr[i]%k;;
+// if(rem<0) rem+=k;
+
 #include<iostream>
 #include<unordered_map>
 
