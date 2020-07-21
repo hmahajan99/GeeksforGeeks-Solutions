@@ -61,3 +61,38 @@ int main(){
     }
 	return 0;
 }
+
+/***************************************************************************************************************************/
+
+// Approach 3: Using multiset & distance, O(n^2)
+// Worst case time complexity of above implementation is O(n^2) as distance function in STL takes O(n)
+// ALternative: Keep array sorted, insert new element like insertion sort => O(n^2)
+
+#include<iostream>
+#include<set>
+#define lli long long
+using namespace std;
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int a[n];
+        for(int i=0;i<n;i++) cin>>a[i];
+        
+        multiset<int> ms; 
+        ms.insert(a[0]); 
+        lli invcount = 0; 
+        for (int i=1;i<n;i++) { 
+            ms.insert(a[i]); 
+            auto it = ms.upper_bound(a[i]); // multiset.upper_vound
+            invcount += distance(it,ms.end());  // distance(it1,it2) defined in header <iterator>
+        } 
+      
+        cout<<invcount<<"\n";        
+        
+    }
+	return 0;
+}
