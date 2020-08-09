@@ -7,9 +7,9 @@
 
 //              1
 //            /   \
-//          2       3
-//        /  \        \
-//       4    5        6
+//          2      3
+//        /  \      \
+//       4    5      6
 // The output is 4 2 1 5 3 6.
 
 // Approach 1: Level Order Traversal + Map

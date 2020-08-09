@@ -21,6 +21,7 @@ struct Node
 
 void splitList(Node *head, Node **head1_ref, Node **head2_ref){
     if(!head||!head->next) return;
+    // Find mid point
     Node *slow=head,*fast=head->next;
     while(fast!=head&&fast->next!=head){
         slow=slow->next;

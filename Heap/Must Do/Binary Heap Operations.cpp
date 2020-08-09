@@ -1,4 +1,5 @@
-// You are required to complete the 3 methods insertKey() which take one argument the value to be inserted, 
+// You are given an empty Binary Min Heap and required to complete the 3 methods 
+// insertKey() which take one argument the value to be inserted, 
 // deleteKey() which takes one argument the position from where the element is to be deleted and 
 // extractMin() which returns the minimum element in the heap.
 

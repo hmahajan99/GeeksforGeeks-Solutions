@@ -56,8 +56,8 @@ void printList (struct Node *head){
 	    curr=next;
 	}
 	cout<<"\n";
-    curr=prev; // Tail
-    Node *next=NULL;
+  curr=prev; // Tail
+  Node *next=NULL;
 	while(curr){
 	    cout<<curr->data<<" ";
 	    Node *prev = XOR(curr->npx,next);
