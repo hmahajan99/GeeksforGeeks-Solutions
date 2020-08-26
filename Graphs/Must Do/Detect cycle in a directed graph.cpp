@@ -99,7 +99,7 @@ bool isCyclic(int V, vector<int> adj[]){
 
 /***************************************************************************************************************************/
 
-// Approach 2: Using BFS O(V+E), Kahns algo for topological sort
+// Approach 3: Using BFS O(V+E), Kahns algo for topological sort
 // if count of visited nodes != num of nodes in graph => cycle
 // Works even for more than 1 component
 

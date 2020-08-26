@@ -2,7 +2,7 @@
 
 // Approach 1: Brute Force
 // A simple solution is to one by one consider all substrings of first string and for every substring check if it is a substring in second string. 
-// Keep track of the maximum length substring. There will be O(m^2) substrings and we can find whether a string is subsring on another string in O(n) time. 
+// Keep track of the maximum length substring. There will be O(m^2) substrings and we can find whether a string is substring on another string in O(n) time. 
 // So overall time complexity of this method would be O(n * (m^2))
 
 /***************************************************************************************************************************/

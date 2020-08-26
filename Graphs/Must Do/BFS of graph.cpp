@@ -1,3 +1,5 @@
+// Given a directed graph. The task is to do Breadth First Search of this graph.
+
 // Approach 1: cout when pushing in queue
 // Time - O(V+E)
 

@@ -1,3 +1,5 @@
+// Given a connected undirected graph. Perform a Depth First Traversal of the graph.
+
 // Approach 1: Recursive
 // Time - O(V+E)
 

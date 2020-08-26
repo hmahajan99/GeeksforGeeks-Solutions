@@ -1,4 +1,5 @@
-// Given a sorted dictionary of an alien language having N words and k starting alphabets of standard dictionary the task is to complete the function which returns a string denoting the order of characters in the language.
+// Given a sorted dictionary of an alien language having N words and k starting alphabets of standard dictionary 
+// the task is to complete the function which returns a string denoting the order of characters in the language.
 // Note: Many orders may be possible for a particular test case, thus you may return any valid order.
 
 // Examples:

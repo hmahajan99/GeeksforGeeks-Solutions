@@ -1,6 +1,9 @@
 // Given a directed graph, you need to complete the function topoSort which returns an array having the topologically sorted elements of the array and takes two arguments. 
 // Note : There can be multiple topological sorts of a Graph. 
 
+// Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge u->v, vertex u comes before v in the ordering. 
+// Topological Sorting for a graph is not possible if the graph is not a DAG.
+
 // Approach 1: Using DFS - O(V+E)
 
 // The Graph structure is as folows

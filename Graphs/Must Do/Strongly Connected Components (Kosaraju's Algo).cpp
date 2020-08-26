@@ -1,8 +1,10 @@
 // Given a directed graph, find out whether the graph is strongly connected or not. 
 
+// A directed graph is strongly connected if there is a path between all pairs of vertices. 
+// A strongly connected component (SCC) of a directed graph is a maximal strongly connected subgraph. 
 // It is easy for undirected graph, we can just do a BFS and DFS starting from any vertex. If BFS or DFS visits all vertices, then the given undirected graph is connected.
 
-// A simple idea is to use a all pair shortest path algorithm like Floyd Warshall or find Transitive Closure of graph. Time complexity of this method would be O(v3).
+// A simple idea is to use a all pair shortest path algorithm like Floyd Warshall or find Transitive Closure of graph. Time complexity of this method would be O(v^3).
 // We can also do DFS V times starting from every vertex. If any DFS, doesn’t visit all vertices, then graph is not strongly connected. This algorithm takes O(V*(V+E)) time which can be same as transitive closure for a dense graph.
 
 // A better idea can be Strongly Connected Components (SCC) algorithm. We can find all SCCs in O(V+E) time. If number of SCCs is one, then graph is strongly connected. The algorithm for SCC does extra work as it finds all SCCs.
