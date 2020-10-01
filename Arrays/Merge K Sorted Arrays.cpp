@@ -31,8 +31,7 @@ int *mergeKArrays(int arr[][N], int k) {
         pair<int, int> val = q.top();
         ans[i]=val.first;i++;
         q.pop();
-        if(maxn[val.second]<k)
-        {
+        if(maxn[val.second]<k){
             q.push({arr[val.second][maxn[val.second]],val.second});
             maxn[val.second]++;
         }
