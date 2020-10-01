@@ -17,20 +17,17 @@
 // Remove the root element of Minheap and put it in the output array and insert the next element from the array of removed element. 
 // To get the result the step must continue until there is no element in the MinHeap or the arrays left.
 
-int *mergeKArrays(int arr[][N], int k)
-{
+int *mergeKArrays(int arr[][N], int k) {
     int *ans = new int[k*k];
     priority_queue< pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>> > q;
     
     int maxn[k];
-    for(int i=0;i<k;i++)
-    {
+    for(int i=0;i<k;i++) {
         q.push({arr[i][0],i});
         maxn[i]=1;
     }
     int i=0;    
-    while(!q.empty())
-    {
+    while(!q.empty()) {
         pair<int, int> val = q.top();
         ans[i]=val.first;i++;
         q.pop();
